@@ -3,12 +3,13 @@ const cors = require('cors');
 const app = express();
 const PORT = 8080;
 
+const dotenv = require('dotenv');
+
 app.use(cors());
 app.use(express.json())
 app.use(express.static('public'));
 
 const typesRoutes = require('./routes/types');
-
 
 app.use('/types', typesRoutes);
 

@@ -9,11 +9,12 @@
         table.increments('id').primary();
         table.string('type').notNullable();
         table.string('type_name').notNullable();
-        table.string('description').notNullable();
-        table.string('trait').notNullable();
-        table.string('career').notNullable();
+        table.string('description',1000).notNullable();
+        table.string('trait',1000).notNullable();
+        table.string('career',1000).notNullable();
         table.string('image').notNullable();
       })
+    }
 
 
       exports.down = function (knex) {
