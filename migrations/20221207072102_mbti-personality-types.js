@@ -15,8 +15,6 @@
         table.string('image').notNullable();
       })
     }
-
-
       exports.down = function (knex) {
         return knex.schema.dropTable('types');
       };
