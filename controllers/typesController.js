@@ -9,7 +9,6 @@ exports.index = (req, res) => {
         data.map((ele) => {ele.trait = JSON.parse(ele.trait); ele.career = JSON.parse(ele.career)} )
         res.status(200).json(data);
         // res.status(200).json(data);
-
     })
     .catch((err) =>
         res.status(400).send(`Error retrieving types: ${err}`)

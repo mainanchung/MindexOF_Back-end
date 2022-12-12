@@ -1,4 +1,4 @@
 GET http://localhost:8080/types
 ###
-GET http://localhost:8080/types/enfp
+GET http://localhost:8080/types/ENFP
 ###
