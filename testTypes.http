@@ -2,3 +2,5 @@ GET http://localhost:8080/types
 ###
 GET http://localhost:8080/types/ENFP
 ###
+
+GET  https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=a74cad39&app_key=553a2357dcce6aae9d4b2bd6cbb99884&results_per_page=3&what_or=teacher%20software
