@@ -10,8 +10,14 @@ app.use(express.json())
 app.use(express.static('public'));
 
 const typesRoutes = require('./routes/types');
-
 app.use('/types', typesRoutes);
+
+
+const jobsRoutes = require('./routes/jobs');
+app.use('/jobs', jobsRoutes);
+
+
+
 
 app.get("/", (req, res) => {
     res.send("Testing"); 

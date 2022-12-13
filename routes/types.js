@@ -6,7 +6,6 @@ const typesController = require('../controllers/typesController');
 router.route("/")
     .get(typesController.index)
 
-
 router.route("/:id")
     .get(typesController.getSingleType)   
 
