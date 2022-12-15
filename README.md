@@ -52,7 +52,7 @@ npm start
 - [indeed]
 - [Truity]
 - [16_personalities]
-- [OQuestion_bank]
+- [Question_bank]
 - [Job_search_API_Adzuna]
 - [Illustrations]
 
