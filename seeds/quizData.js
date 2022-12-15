@@ -134,7 +134,7 @@ exports.seed = async function(knex) {
       type_name: 'DYNAMO',
       description:'The ESTP personality type is often referred to as entrepreneurial. They are energetic, pragmatic and flexible. Eagerly searching for fast results, they often take risks to come up with the best solutions. ESTPs enjoy a fast-paced lifestyle by living “in the moment” and spending time around groups of people. ',
       trait:JSON.stringify(["Practical", "Creative", "Outgoing", "Collaborative", "Perceptive"]),
-      career:JSON.stringify(["Actor", "Entrepreneur", "Marketer", "Paramedic", "Stockbroker", "Creative director", "Project manager", "Chief financial officer", "Financial planner", "Architect", "Paramedic", "Financial Planner", "Vocational Teacher"]),
+      career:JSON.stringify(["Actor", "Entrepreneur", "Marketer", "Paramedic", "Stockbroker", "Creative director", "Project manager", "Chief financial officer","Architect", "Financial Planner", "Vocational Teacher"]),
       image:"http://localhost:8080/images/ESTP.png"
     },
     {
