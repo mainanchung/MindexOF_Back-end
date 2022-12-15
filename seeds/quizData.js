@@ -22,7 +22,7 @@ exports.seed = async function(knex) {
       type_name: 'INSPECTOR',
       description:'People with this personality generally appear serious and formal. They usually love traditions and believe in values like honor, hard work and social responsibility. They are typically reserved, quiet, calm and upright. At work, they are known for being responsible and reliable. They thrive in an organized workplace and prefer to have rules laid out for them. They like to use analytical and critical thought and are highly detail-oriented.',
       trait:JSON.stringify(["Decisive","Detail-oriented", "Reliable", "Persistent","Logical"]),
-      career:JSON.stringify(["Dentist", "Certified public accountant", "Supply chain managers",  "Bank teller",  "Military officer",  "Inspector", "Lawyer", "Civil engineer", "Actuary", "Executive Consultant", "Financial analyst", "Actuary", "Bailiff",  "Investigator", "Forensic psychologist", "Secretary", "Judge", "Program administrator", "Executive assistant", "Support specialist", "Auditor", "Budget analyst", "Financial controller"]),
+      career:JSON.stringify(["Dentist", "Certified public accountant", "Supply chain managers",  "Bank teller",  "Military officer",  "Inspector", "Lawyer", "Civil engineer", "Executive Consultant", "Financial analyst", "Actuary", "Bailiff",  "Investigator", "Forensic psychologist", "Secretary", "Judge", "Program administrator", "Executive assistant", "Support specialist", "Auditor", "Budget analyst", "Financial controller"]),
       image:"http://localhost:8080/images/ISTJ.png"      
     },
     {
@@ -30,7 +30,7 @@ exports.seed = async function(knex) {
       type_name: 'COUNSELOR',
       description:'INFJs are usually idealists who have a profound way of looking at the world. They usually don’t take things at the surface level or accept things as they are. They are often overflowing with ideas and creative imagination. When it comes to careers, they appreciate peaceful work environments and are deep thinkers who appreciate challenges at work. They are empathetic and caring, helpful and insightful.',
       trait:JSON.stringify(["Compassionate", "Idealist", "Practical", "Future-oriented", "Intuitive nature"]),
-      career:JSON.stringify(["Dentist", "Certified public accountant", "Supply chain managers",  "Bank teller",  "Military officer",  "Inspector", "Lawyer", "Civil engineer", "Actuary", "Executive Consultant", "Financial analyst", "Actuary", "Bailiff",  "Investigator", "Forensic psychologist", "Secretary", "Judge", "Program administrator", "Executive assistant", "Support specialist", "Auditor", "Budget analyst", "Financial controller"]),
+      career:JSON.stringify(["Chaplain", "Paralegal", "Civil service administrator", "Advocate", "UX designer", "HR business partner", "Digital marketing manager", "Content editor", "Counselor", "Teacher", "Art directors", "Art agents", "Graphic designers", "Animators","Writers"]),
       image:"http://localhost:8080/images/INFJ.png"      
     },
     {
@@ -70,7 +70,7 @@ exports.seed = async function(knex) {
       type_name: 'MASTERMIND',
       description:'INTJs are usually quiet, reserved and comfortable being alone. Socializing often drains their energy and they need alone time to recharge. They are interested in ideas and theories and enjoy questioning why things happen the way they do. They excel at planning and strategizing and dont like uncertainty. They have a talent for recognizing connections that makes them natural problem-solvers and they are skilled at both intuitive and practical thinking.',
       trait:JSON.stringify(["Altruistic", "Confident", "Energetic", "Charismatic", "Tolerant", "Empathic"]),
-      career:JSON.stringify(["Cinematographer", "Musical Performer", "Creative director", "Product manager","Marketing manager"," Business strategist", "Software developer", "Financial advisor", "Accountant", "Auditor","Economist", "Professor", "School administratorm", "Guidance counselor", "Paralegal", "Attorney", "Counsel","Personal trainer","Physician"]),
+      career:JSON.stringify(["Director of Photography", "Musical Performer", "Creative director", "Product manager","Marketing manager"," Business strategist", "Software developer", "Financial advisor", "Accountant", "Auditor","Economist", "Professor", "School administratorm", "Guidance counselor", "Paralegal", "Attorney", "Counsel","Personal trainer","Physician"]),
       image:"http://localhost:8080/images/INTJ.png"      
     },
     {
@@ -93,7 +93,7 @@ exports.seed = async function(knex) {
       type: "INTP",
       type_name: 'ARCHITECT',
       description:'Quiet and contained, the INTP enjoys abstract ideas and deep thought about theories over interaction with others. They desire logical answers to questions or problems that arise in their environment. Often skeptical and analytical, INTPs are great problem-solvers, helpful when certain business issues present themselves. They are usually creative, intelligent and attentive.',
-      trait:JSON.stringify(["Analytical, Imaginative, Objective, Enthusiastic, Straightforward"]),
+      trait:JSON.stringify(["Analytical", "Imaginative", "Objective", "Enthusiastic", "Straightforward"]),
       career:JSON.stringify(["Architect", "Business analyst", "Computer programmer", "Forensic medical examiner", "Information security analyst", "Technical writer", "Archaeologist", "Lawyer", "Biomedical engineer", "Composer", "Computer systems analyst", "Environmental scientist", "Marketing consultant"]),
       image:"http://localhost:8080/images/INTP.png"      
     },
@@ -102,7 +102,7 @@ exports.seed = async function(knex) {
       type_name: 'PROVIDER',
       description:'ESFJs are serious and practical, committed to their responsibilities and sensitive to the needs of others. They strive for harmony, are generous with their time, efforts, and emotions, and are eager to please—both at work and home. ESFJs value loyalty and tradition and hold to a strict moral code. They typically enjoy their routines and maintain a regular schedule that allows them to be productive.',
       trait:JSON.stringify(["Genuine", "Empathetic", "Encouraging","Motivated", "Generous", "Loyal", "Sense of duty"]),
-      career:JSON.stringify(["Accountant", "Advertising sales", "Event planner", "Guidance counselor", "Curator, Nurse", "Nutritionist", "Office manager", "Optometrist", "Physician", "Psychologist", "Receptionist", "Social worker", "Technical support specialist"]),
+      career:JSON.stringify(["Accountant", "Advertising sales", "Event planner", "Guidance counselor", "Curator", "Nurse", "Nutritionist", "Office manager", "Optometrist", "Physician", "Psychologist", "Receptionist", "Social worker", "Technical support specialist"]),
       image:"http://localhost:8080/images/ESFJ.png"     
     },
     {
@@ -110,7 +110,7 @@ exports.seed = async function(knex) {
       type_name: 'PERFORMER',
       description:'Often seen as the entertainer, the ESFP personality type is outgoing, friendly and generous. They enjoy spending time around others, spreading excitement and joy at home and work. While practical and realistic in their work, they also value having fun achieving their goals. They are energetic and flexible, encouraging others along the way.',
       trait:JSON.stringify(["Practical", "Creative", "Outgoing", "Collaborative", "Perceptive"]),
-      career:JSON.stringify(["Accountant", "Advertising sales", "Event planner", "Guidance counselor", "Curator","Nurse", "Nutritionist", "Office manager", "Optometrist", "Physician", "Psychologist", "Receptionist", "Social worker", "Technical support specialist"]),
+      career:JSON.stringify(["Event planner", "Firefighter", "Flight attendant", "Tour guide", "Wait staff", "Creative director", "Project manager", "Chief financial officer", "Financial planner", "Architect"]),
       image:"http://localhost:8080/images/ESFP.png"
     },
     {
@@ -142,7 +142,7 @@ exports.seed = async function(knex) {
       type_name: 'CRAFTSMAN',
       description:'The ISTP personality type is typically quiet and observant. When a problem arises, they are tolerant, flexible and quick to find a solution. Organized and practical, the ISTP values data, logic and fact. ISTPs often find meaningful work making and creating things, finding ways to make things work and learning along the way.',
       trait:JSON.stringify(["Critical", "Resourceful", "Self-motivated", "Optimistic", "Nonjudgmental", "Calm"]),
-      career:JSON.stringify(["Actor", "Entrepreneur", "Marketer", "Paramedic", "Stockbroker", "Creative director", "Project manager", "Chief financial officer", "Financial planner", "Architect", "Paramedic", "Financial Planner", "Vocational Teacher"]),
+      career:JSON.stringify(["Airline pilot", "Chef", "Economist", "Health inspector", "Forensic scientist", "Investment banker", "Historian", "Technician", "Inspector", "Carpenter", "Machinist", "Engineer"]),
       image:"http://localhost:8080/images/ISTP.png"
     }  
   ]);
