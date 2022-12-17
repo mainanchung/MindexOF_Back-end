@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = 8080;
-
+require ('dotenv').config();
 const dotenv = require('dotenv');
 
 app.use(cors());
@@ -17,13 +17,11 @@ const jobsRoutes = require('./routes/jobs');
 app.use('/jobs', jobsRoutes);
 
 
-
-
 app.get("/", (req, res) => {
     res.send("Testing"); 
 })
 
 app.listen(PORT, () => {
-    console.log('Server stated on http://localhost:8080');
+    console.log(`Server stated on http://localhost:${PORT}`);
     console.log("Press CTRL + C to stop server"); 
 })

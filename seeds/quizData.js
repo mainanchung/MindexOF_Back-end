@@ -3,16 +3,6 @@
  * @returns { Promise<void> } 
  */
 
-//  .createTable('types', (table) => {
-//   table.increments('id').primary();
-//   table.string('type').notNullable();
-//   table.string('type_name').notNullable();
-//   table.string('description').notNullable();
-//   table.string('trait').notNullable();
-//   table.string('career').notNullable();
-//   table.string('image').notNullable();
-// })
-
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
   await knex('types').del()
@@ -78,7 +68,7 @@ exports.seed = async function(knex) {
       type_name: 'COMMANDER',
       description:'Natural leaders, the ENTJ personality type is often honest and ready to make quick decisions. They are quick to spot inefficiencies and develop ways to solve problems. ENTJs value goal-setting, organization and planning. They are charismatic and confident, which helps them to rally a group behind a common goal.',
       trait:JSON.stringify(["Altruistic", "Confident", "Energetic", "Charismatic", "Tolerant", "Empathic"]),
-      career:JSON.stringify(["Budget analyst", "Business administrator", "Construction manager", "Judge", "Public relations specialist", "Financial analyst", "Project manager", "Construction manager", "Civil engineer", "Management consultant", "Auditor", "Network administrator", "Salesperson", "Lawyer", "Public speaker"]),
+      career:JSON.stringify(["Budget analyst", "Business administrator", "Construction manager", "Judge", "Public relations specialist", "Financial analyst", "Project manager","Civil engineer", "Management consultant", "Auditor", "Network administrator", "Salesperson", "Lawyer", "Public speaker"]),
       image:"http://localhost:8080/images/ENTJ.png"     
     },
     {
