@@ -2,7 +2,7 @@ const knex = require("knex")(require("../knexfile"))
 const fs = require('fs')
 const axios = require("axios")
 require ('dotenv').config();
-const API_ID = process.env.API_ID
+const API_ID =process.env.API_ID
 const API_KEY=process.env.API_KEY
 const API_URL=process.env.API_URL
 
