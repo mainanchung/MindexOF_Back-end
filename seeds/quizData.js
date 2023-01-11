@@ -28,7 +28,7 @@ exports.seed = async function(knex) {
       type_name: 'DEFENDER',
       description:'Conventional and grounded, ISFJs strive to uphold established structures and maintain orderly environments. They have a strong work ethic that includes serving others and dedication to their duties. ISFJs are conscientious and organized workers who aren’t satisfied until the job is done.',
       trait:JSON.stringify(["Practical", "Hardworking", "Supportive", "Honest"]),
-      career:JSON.stringify(["Account manager", "Research analyst", "Museum curator", "Historian","Office manager","Human resources", "Account manager"," Film editor", "Librarian", "School administrator", "Health care worker ", "Radiation therapist"]),
+      career:JSON.stringify(["Account manager", "Research analyst", "Museum curator", "Historian","Office manager","Human resources"," Film editor", "Librarian", "School administrator", "Health care worker ", "Radiation therapist"]),
       image:"http://localhost:8080/images/ISFJ.png"     
     },
     {
