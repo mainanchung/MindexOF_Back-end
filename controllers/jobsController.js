@@ -9,18 +9,33 @@ const API_URL=process.env.API_URL
 
 
 exports.getJobs = (req, res) => {
+    const location = req.body.location
     const career = req.body.career
+    console.log(career)
     let url = `${API_URL}/us/search/1?app_id=${API_ID}&app_key=${API_KEY}&what_or=${career}&full_time=1&contract=1`
+    let urlWithLocation = `${API_URL}/${location}/search/1?app_id=${API_ID}&app_key=${API_KEY}&what_or=${career}&full_time=1&contract=1`
 
-    axios.get(url).then((response) => {
-        return res.json({
-            jobs: response.data.results
+    if(!location){
+        axios.get(url).then((response) => {
+            return res.status(200).json({
+                jobs: response.data.results
+            })
+        }).catch((error) => {
+            console.log(error)
+            return res.status(500).json({
+                error: "Error: " + error
+            })
         })
-    }).catch((error) => {
-        console.log(error)
-        return res.json({
-            error: "Error" + error
-        })
-    })
-    
+    } else {
+        axios.get(urlWithLocation).then((response) => {
+            return res.status(200).json({
+                jobs: response.data.results
+            })
+        }).catch((error) => {
+            console.log(error)
+            return res.status(500).json({
+                error: "Error: " + error
+            })
+        });
+    }
 }
